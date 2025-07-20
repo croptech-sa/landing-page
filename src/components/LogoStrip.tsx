@@ -11,20 +11,22 @@ const LogoStrip: React.FC = () => {
   ];
 
   return (
-    <div className="w-full overflow-hidden bg-transparent py-4 group">
-      <div className="flex w-max animate-scroll-rtl group-hover:[animation-play-state:paused]">
-        {[...logos, ...logos].map((logo, index) => (
-          <div
-            key={index}
-            className="flex-shrink-0 w-32 h-16 mx-8 flex items-center justify-center"
-          >
-            <img
-              src={logo.src}
-              alt={logo.alt}
-              className="max-w-full max-h-full object-contain filter brightness-0 invert opacity-70 hover:opacity-90 transition-opacity duration-300"
-            />
-          </div>
-        ))}
+    <div className="w-full overflow-hidden bg-transparent py-4">
+      <div className="relative w-full">
+        <div className="absolute top-0 right-0 flex w-max animate-scroll-rtl hover:[animation-play-state:paused]">
+          {[...logos, ...logos, ...logos].map((logo, index) => (
+            <div
+              key={index}
+              className="flex-shrink-0 w-32 h-16 mx-8 flex items-center justify-center"
+            >
+              <img
+                src={logo.src}
+                alt={logo.alt}
+                className="max-w-full max-h-full object-contain filter brightness-0 invert opacity-70 hover:opacity-90 transition-opacity duration-300"
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
