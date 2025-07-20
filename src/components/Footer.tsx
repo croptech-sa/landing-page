@@ -22,16 +22,16 @@ const Footer: React.FC = () => {
           {/* Right Side: Logo + Description + Links */}
           <div className="w-full lg:w-1/2 text-right">
             {/* Logo on top, text close under it */}
-            <div className="mb-6">
+            <div className="inline-block mb-3 ml-auto">
               <img
                 src="/logo.svg"
                 alt="شعار كروبتك"
-                className="w-28 h-28 ml-auto mb-3"
+                className="w-28 h-28"
               />
-              <p className="mt-2 text-sm md:text-base text-white/90 leading-relaxed text-right">
-                نحن هنا لنحوّل أهدافك البيئية إلى أثر ملموس… وموثّق بكل شفافية.
-              </p>
             </div>
+            <p className="mt-2 text-sm md:text-base text-white/90 leading-relaxed text-right">
+              نحن هنا لنحوّل أهدافك البيئية إلى أثر ملموس… وموثّق بكل شفافية.
+            </p>
 
             <h4 className="text-sm font-medium text-white/70 mt-6 mb-3">روابط سريعة</h4>
             <nav className="flex flex-wrap justify-start gap-x-3 gap-y-2 text-sm">
@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
               معلومات التواصل
             </h4>
             <div className="space-y-2 text-sm text-white/90">
-              <p>الرياض – منشآت – حي الخالدية – مكتب رقم 2</p>
+              <p>الرياض – منشآت</p>
               <p>(+966) 500000000</p>
               <p>contact@croptech.com.sa</p>
             </div>
