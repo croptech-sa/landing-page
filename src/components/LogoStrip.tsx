@@ -2,12 +2,12 @@ import React from 'react';
 
 const LogoStrip: React.FC = () => {
   const logos = [
-    { id: 1, name: 'شريك 1' },
-    { id: 2, name: 'شريك 2' },
-    { id: 3, name: 'شريك 3' },
-    { id: 4, name: 'شريك 4' },
-    { id: 5, name: 'شريك 5' },
-    { id: 6, name: 'شريك 6' },
+    { id: 1, src: '/Partners/bim.svg', alt: 'BIM' },
+    { id: 2, src: '/Partners/Frame 2.svg', alt: 'Frame 2' },
+    { id: 3, src: '/Partners/mew.svg', alt: 'MEW' },
+    { id: 4, src: '/Partners/mushat.svg', alt: 'Mushat' },
+    { id: 5, src: '/Partners/ntdp.svg', alt: 'NTDP' },
+    { id: 6, src: '/Partners/Sunbolah.svg', alt: 'Sunbolah' },
   ];
 
   return (
@@ -17,18 +17,26 @@ const LogoStrip: React.FC = () => {
         {logos.map((logo) => (
           <div
             key={`first-${logo.id}`}
-            className="flex-shrink-0 w-32 h-16 mx-8 bg-white/10 border border-white/20 rounded-lg flex items-center justify-center"
+            className="flex-shrink-0 w-32 h-16 mx-8 flex items-center justify-center"
           >
-            <span className="text-white/60 text-sm font-medium">{logo.name}</span>
+            <img 
+              src={logo.src} 
+              alt={logo.alt}
+              className="max-w-full max-h-full object-contain filter brightness-0 invert opacity-70 hover:opacity-90 transition-opacity duration-300"
+            />
           </div>
         ))}
         {/* Duplicate set for seamless loop */}
         {logos.map((logo) => (
           <div
             key={`second-${logo.id}`}
-            className="flex-shrink-0 w-32 h-16 mx-8 bg-white/10 border border-white/20 rounded-lg flex items-center justify-center"
+            className="flex-shrink-0 w-32 h-16 mx-8 flex items-center justify-center"
           >
-            <span className="text-white/60 text-sm font-medium">{logo.name}</span>
+            <img 
+              src={logo.src} 
+              alt={logo.alt}
+              className="max-w-full max-h-full object-contain filter brightness-0 invert opacity-70 hover:opacity-90 transition-opacity duration-300"
+            />
           </div>
         ))}
       </div>
