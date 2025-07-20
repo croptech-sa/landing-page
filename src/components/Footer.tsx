@@ -54,7 +54,7 @@ const Footer: React.FC = () => {
             </h4>
             <div className="space-y-2 text-sm text-white/90">
               <p>الرياض – منشآت – حي الخالدية – مكتب رقم 2</p>
-              <p>(+966) 500000000</p>
+              <p> 500000000 (+966) </p>
               <p>contact@croptech.com.sa</p>
             </div>
 
