@@ -22,18 +22,18 @@ const Footer: React.FC = () => {
           {/* Right Side: Logo + Description + Links */}
           <div className="w-full lg:w-1/2 text-right">
             {/* Logo on top, text close under it */}
-            <div className="mb-2">
+            <div className="mb-6">
               <img
                 src="/logo.svg"
                 alt="شعار كروبتك"
-                className="w-20 h-20 ml-auto mb-2"
+                className="w-24 h-24 ml-auto mb-3"
               />
               <p className="mt-2 text-sm md:text-base text-white/90 leading-relaxed text-right">
                 نحن هنا لنحوّل أهدافك البيئية إلى أثر ملموس… وموثّق بكل شفافية.
               </p>
             </div>
 
-            <h4 className="text-sm font-medium text-white/70 mb-3">روابط سريعة</h4>
+            <h4 className="text-sm font-medium text-white/70 mt-6 mb-3">روابط سريعة</h4>
             <nav className="flex flex-wrap justify-start gap-x-3 gap-y-2 text-sm">
               <a href="#" className="text-white/80 hover:text-[#377138]">الرئيسية</a>
               <span className="text-white/30">–</span>
@@ -54,7 +54,7 @@ const Footer: React.FC = () => {
             </h4>
             <div className="space-y-2 text-sm text-white/90">
               <p>الرياض – منشآت – حي الخالدية – مكتب رقم 2</p>
-              <p> 500000000 (+966) </p>
+              <p>(+966) 500000000</p>
               <p>contact@croptech.com.sa</p>
             </div>
 
@@ -66,7 +66,7 @@ const Footer: React.FC = () => {
                 rel="noreferrer"
                 className="w-7 h-7 bg-white/10 rounded-md flex items-center justify-center hover:bg-[#377138]"
               >
-                <XIcon className="text-white" />
+                <XIcon className="w-3.5 h-3.5 text-white" />
               </a>
               <a
                 href="https://www.linkedin.com/company/croptech-ksa/"
