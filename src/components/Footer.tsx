@@ -18,31 +18,32 @@ const Footer: React.FC = () => {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-[60%_40%] gap-8 lg:gap-16">
-          {/* Right Side: Logo, Description, Links */}
-          <div className="text-right">
-            <div className="mb-4 flex justify-end">
-              <img
-                src="/logo.svg"
-                alt="شعار كروبتك"
-                className="w-16 h-16"
-              />
-            </div>
-            <p className="text-sm md:text-base text-white/90 mb-5">
-              نحن هنا لنحوّل أهدافك البيئية إلى أثر ملموس… وموثّق بكل شفافية.
-            </p>
-            <h4 className="text-sm font-medium text-white/70 mb-3">روابط سريعة</h4>
-            <nav className="flex flex-wrap justify-start gap-x-3 gap-y-2 text-sm">
-              <a href="#" className="text-white/80 hover:text-[#377138]">الرئيسية</a>
-              <span className="text-white/30">–</span>
-              <a href="#" className="text-white/80 hover:text-[#377138]">قصتنا</a>
-              <span className="text-white/30">–</span>
-              <a href="#" className="text-white/80 hover:text-[#377138]">كيف نعمل</a>
-              <span className="text-white/30">–</span>
-              <a href="#" className="text-white/80 hover:text-[#377138]">ابدأ الآن</a>
-              <span className="text-white/30">–</span>
-              <a href="#" className="text-white/80 hover:text-[#377138]">تواصل معنا</a>
-            </nav>
-          </div>
+         {/* Right Side: Logo, Description, Links */}
+<div className="text-right">
+  <div className="mb-6 flex justify-end">
+    <img
+      src="/logo.svg"
+      alt="شعار كروبتك"
+      className="w-24 h-24 lg:w-28 lg:h-28"
+    />
+  </div>
+  <p className="text-sm md:text-base text-white/90 mb-5">
+    نحن هنا لنحوّل أهدافك البيئية إلى أثر ملموس… وموثّق بكل شفافية.
+  </p>
+  <h4 className="text-sm font-medium text-white/70 mb-3">روابط سريعة</h4>
+  <nav className="flex flex-wrap justify-start gap-x-3 gap-y-2 text-sm">
+    <a href="#" className="text-white/80 hover:text-[#377138]">الرئيسية</a>
+    <span className="text-white/30">–</span>
+    <a href="#" className="text-white/80 hover:text-[#377138]">قصتنا</a>
+    <span className="text-white/30">–</span>
+    <a href="#" className="text-white/80 hover:text-[#377138]">كيف نعمل</a>
+    <span className="text-white/30">–</span>
+    <a href="#" className="text-white/80 hover:text-[#377138]">ابدأ الآن</a>
+    <span className="text-white/30">–</span>
+    <a href="#" className="text-white/80 hover:text-[#377138]">تواصل معنا</a>
+  </nav>
+</div>
+  
 
           {/* Left Side: Contact Info */}
           <div className="text-right">
