@@ -1,6 +1,7 @@
 import React from 'react';
-import { Linkedin, Twitter } from 'lucide-react';
+import { Linkedin } from 'lucide-react';
 import Threads from './Threads';
+import XIcon from './XIcon';
 
 const Footer: React.FC = () => {
   return (
@@ -25,9 +26,9 @@ const Footer: React.FC = () => {
               <img
                 src="/logo.svg"
                 alt="شعار كروبتك"
-                className="w-16 h-16 ml-auto mb-2"
+                className="w-20 h-20 ml-auto mb-2"
               />
-              <p className="text-sm md:text-base text-white/90 leading-relaxed text-right">
+              <p className="mt-2 text-sm md:text-base text-white/90 leading-relaxed text-right">
                 نحن هنا لنحوّل أهدافك البيئية إلى أثر ملموس… وموثّق بكل شفافية.
               </p>
             </div>
@@ -65,7 +66,7 @@ const Footer: React.FC = () => {
                 rel="noreferrer"
                 className="w-7 h-7 bg-white/10 rounded-md flex items-center justify-center hover:bg-[#377138]"
               >
-                <Twitter className="w-3.5 h-3.5 text-white" />
+                <XIcon className="text-white" />
               </a>
               <a
                 href="https://www.linkedin.com/company/croptech-ksa/"
