@@ -17,19 +17,22 @@ const Footer: React.FC = () => {
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-[60%_40%] gap-8 lg:gap-16">
-          {/* Right Side: Logo + Description + Links */}
-          <div className="text-right">
-            <div className="mb-6 flex flex-row-reverse justify-start">
+        <div className="flex flex-col lg:flex-row justify-between gap-10">
+          {/* Right: Logo + Description + Links */}
+          <div className="w-full lg:w-1/2 text-right">
+            {/* Logo aligned to far right */}
+            <div className="mb-6">
               <img
                 src="/logo.svg"
                 alt="شعار كروبتك"
-                className="w-24 h-24 lg:w-28 lg:h-28"
+                className="w-28 h-28 ml-auto"
               />
             </div>
+
             <p className="text-sm md:text-base text-white/90 mb-5">
               نحن هنا لنحوّل أهدافك البيئية إلى أثر ملموس… وموثّق بكل شفافية.
             </p>
+
             <h4 className="text-sm font-medium text-white/70 mb-3">روابط سريعة</h4>
             <nav className="flex flex-wrap justify-start gap-x-3 gap-y-2 text-sm">
               <a href="#" className="text-white/80 hover:text-[#377138]">الرئيسية</a>
@@ -44,8 +47,8 @@ const Footer: React.FC = () => {
             </nav>
           </div>
 
-          {/* Left Side: Contact Info */}
-          <div className="text-right">
+          {/* Left: Contact Info */}
+          <div className="w-full lg:w-1/2 text-right">
             <h4 className="text-sm font-medium text-white/70 mb-4">معلومات التواصل</h4>
             <p className="text-white/90 text-sm mb-1">الرياض – منشآت – حي الخالدية – مكتب رقم 2</p>
             <p className="text-white/90 text-sm mb-1">(+966) 500000000</p>
