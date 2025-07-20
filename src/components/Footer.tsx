@@ -21,17 +21,18 @@ const Footer: React.FC = () => {
           {/* Right: Logo + Description + Links */}
           <div className="w-full lg:w-1/2 text-right">
             {/* Logo aligned to far right */}
-            <div className="mb-6">
-              <img
-                src="/logo.svg"
-                alt="شعار كروبتك"
-                className="w-28 h-28 ml-auto"
-              />
-            </div>
+        <div className="mb-3">
+  <img
+    src="/logo.svg"
+    alt="شعار كروبتك"
+    className="w-28 h-28 ml-auto"
+  />
+</div>
 
-            <p className="text-sm md:text-base text-white/90 mb-5">
-              نحن هنا لنحوّل أهدافك البيئية إلى أثر ملموس… وموثّق بكل شفافية.
-            </p>
+<p className="text-sm md:text-base text-white/90 mb-5">
+  نحن هنا لنحوّل أهدافك البيئية إلى أثر ملموس… وموثّق بكل شفافية.
+</p>
+
 
             <h4 className="text-sm font-medium text-white/70 mb-3">روابط سريعة</h4>
             <nav className="flex flex-wrap justify-start gap-x-3 gap-y-2 text-sm">
