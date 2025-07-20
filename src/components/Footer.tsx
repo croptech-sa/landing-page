@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
               <img
                 src="/logo.svg"
                 alt="شعار كروبتك"
-                className="w-24 h-24 ml-auto mb-3"
+                className="w-28 h-28 ml-auto mb-3"
               />
               <p className="mt-2 text-sm md:text-base text-white/90 leading-relaxed text-right">
                 نحن هنا لنحوّل أهدافك البيئية إلى أثر ملموس… وموثّق بكل شفافية.
