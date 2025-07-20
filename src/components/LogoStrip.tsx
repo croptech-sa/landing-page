@@ -11,8 +11,8 @@ const LogoStrip: React.FC = () => {
   ];
 
   return (
-    <div className="w-full overflow-hidden bg-transparent py-4">
-      <div className="flex w-max animate-scroll-rtl">
+    <div className="w-full overflow-hidden bg-transparent py-4 group">
+      <div className="flex w-max animate-scroll-rtl group-hover:[animation-play-state:paused]">
         {[...logos, ...logos].map((logo, index) => (
           <div
             key={index}
