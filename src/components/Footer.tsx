@@ -21,17 +21,17 @@ const Footer: React.FC = () => {
         <div className="flex flex-col lg:flex-row justify-between gap-10">
           {/* Right Side: Logo + Description + Links */}
           <div className="w-full lg:w-1/2 text-right">
-            {/* Logo on top, text close under it */}
-            <div className="inline-block mb-3 ml-auto">
+            {/* Logo on top, tightly packed with text */}
+            <div className="flex flex-col items-end mb-3">
               <img
                 src="/logo.svg"
                 alt="شعار كروبتك"
-                className="w-28 h-28"
+                className="w-16 h-16"
               />
+              <p className="mt-2 text-sm md:text-base text-white/90 leading-relaxed text-right">
+                نحن هنا لنحوّل أهدافك البيئية إلى أثر ملموس… وموثّق بكل شفافية.
+              </p>
             </div>
-            <p className="mt-2 text-sm md:text-base text-white/90 leading-relaxed text-right">
-              نحن هنا لنحوّل أهدافك البيئية إلى أثر ملموس… وموثّق بكل شفافية.
-            </p>
 
             <h4 className="text-sm font-medium text-white/70 mt-6 mb-3">روابط سريعة</h4>
             <nav className="flex flex-wrap justify-start gap-x-3 gap-y-2 text-sm">
