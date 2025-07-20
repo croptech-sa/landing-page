@@ -18,21 +18,19 @@ const Footer: React.FC = () => {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         <div className="flex flex-col lg:flex-row justify-between gap-10">
-          {/* Right: Logo + Description + Links */}
+          {/* Right Side: Logo + Description + Links */}
           <div className="w-full lg:w-1/2 text-right">
-            {/* Logo aligned to far right */}
-        <div className="mb-3">
-  <img
-    src="/logo.svg"
-    alt="شعار كروبتك"
-    className="w-28 h-28 ml-auto"
-  />
-</div>
-
-<p className="text-sm md:text-base text-white/90 mb-5">
-  نحن هنا لنحوّل أهدافك البيئية إلى أثر ملموس… وموثّق بكل شفافية.
-</p>
-
+            {/* Logo and Description side by side */}
+            <div className="flex items-center justify-end gap-4 mb-4">
+              <img
+                src="/logo.svg"
+                alt="شعار كروبتك"
+                className="w-20 h-20"
+              />
+              <p className="text-sm md:text-base text-white/90 leading-relaxed max-w-xs">
+                نحن هنا لنحوّل أهدافك البيئية إلى أثر ملموس… وموثّق بكل شفافية.
+              </p>
+            </div>
 
             <h4 className="text-sm font-medium text-white/70 mb-3">روابط سريعة</h4>
             <nav className="flex flex-wrap justify-start gap-x-3 gap-y-2 text-sm">
@@ -48,13 +46,18 @@ const Footer: React.FC = () => {
             </nav>
           </div>
 
-          {/* Left: Contact Info */}
+          {/* Left Side: Contact Info */}
           <div className="w-full lg:w-1/2 text-right">
-            <h4 className="text-sm font-medium text-white/70 mb-4">معلومات التواصل</h4>
-            <p className="text-white/90 text-sm mb-1">الرياض – منشآت – حي الخالدية – مكتب رقم 2</p>
-            <p className="text-white/90 text-sm mb-1">(+966) 500000000</p>
-            <p className="text-white/90 text-sm mb-5">contact@croptech.com.sa</p>
-            <h5 className="font-medium text-white/70 mb-2 text-sm">تابعنا على:</h5>
+            <h4 className="text-sm font-medium text-white/70 mb-4 border-b border-white/20 pb-2">
+              معلومات التواصل
+            </h4>
+            <div className="space-y-2 text-sm text-white/90">
+              <p>الرياض – منشآت – حي الخالدية – مكتب رقم 2</p>
+              <p>(+966) 500000000</p>
+              <p>contact@croptech.com.sa</p>
+            </div>
+
+            <h5 className="font-medium text-white/70 mb-2 mt-6 text-sm">تابعنا على:</h5>
             <div className="flex gap-2">
               <a
                 href="https://x.com/croptech_ksa"
